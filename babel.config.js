@@ -4,6 +4,3 @@ module.exports = {
     "@babel/preset-react" //transformar as coisas que o navegador não entende do react
   ],
 };
-
-
-

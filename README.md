@@ -37,3 +37,9 @@ criar a pasta src para por todo o codigo js la dentro
 instalar babel loader
 
 ### `yarn add babel-loader -D`
+
+para recarregar a pagina toda vez
+
+### `yarn add webpack-dev-server -D`
+
+### `yarn add style-loader css-loader -D`

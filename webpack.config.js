@@ -6,6 +6,9 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
+  devServer: {
+    static: path.join(__dirname, 'public'),
+  },
   module: {
     rules: [
       {
@@ -14,6 +17,12 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         }
+      }, {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader'},
+        ]
       }
     ]
   }
