@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'babel' imported from C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\babel-virtual-resolve-base.js\\n    at new NodeError (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:2552:5)\\n    at packageResolve (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:3208:9)\\n    at moduleResolve (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:3242:18)\\n    at defaultResolve (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:3281:13)\\n    at C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:3304:14\\n    at Generator.next (<anonymous>)\\n    at asyncGeneratorStep (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:63:103)\\n    at _next (C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:65:194)\\n    at C:\\\\Users\\\\gabri\\\\Documents\\\\Rocketseat\\\\Frontend-Bootcamp8-RS\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\vendor\\\\import-meta-resolve.js:65:364\\n    at new Promise (<anonymous>)\");\n\n//# sourceURL=webpack://frontend-bootcamp8-rs/./src/index.js?");
+eval("var soma = function soma(a, b) {\n  return a + b;\n};\n\nalert(soma(1, 3));\n\n//# sourceURL=webpack://frontend-bootcamp8-rs/./src/index.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/li
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
