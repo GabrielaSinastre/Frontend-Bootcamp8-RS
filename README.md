@@ -41,3 +41,5 @@ add css e arquivo de imagem
 ### `yarn add file-loader -D`
 
 instalar um plugin do babel para usar o constructor mais resumido, pelo state nas classes
+
+video 9
