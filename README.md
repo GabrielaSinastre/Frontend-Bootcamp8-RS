@@ -1,20 +1,12 @@
-# Frontend-Bootcamp8-RS
+# Rocketseat Bootcamp GoStack 8.0
 
-Projeto desenvolvido para o Bootcamp GoStack 8.0 da Rocketseat e para estudos dos conceitos de backend e frontend.
+# Conceitos básicos de React do Bootcamp8-RS
+
+Projeto desenvolvido para o Bootcamp GoStack 8.0 da Rocketseat e para estudos dos conceitos de frontend.
 
 ## Modulo 04
 
 Módulo para aprender os conceitos básicos de React
-
-## Scripts
-
-### `yarn init -y`
-
-# Rocketseat Bootcamp GoStack 8.0
-
-## MÓDULO 02
-
-Implementação de um projeto backend, chamado GoBarber.
 
 ## Scripts
 
@@ -42,4 +34,10 @@ para recarregar a pagina toda vez
 
 ### `yarn add webpack-dev-server -D`
 
+add css e arquivo de imagem
+
 ### `yarn add style-loader css-loader -D`
+
+### `yarn add file-loader -D`
+
+instalar um plugin do babel para usar o constructor mais resumido, pelo state nas classes
