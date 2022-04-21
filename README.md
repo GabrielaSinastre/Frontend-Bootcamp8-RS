@@ -42,4 +42,6 @@ add css e arquivo de imagem
 
 instalar um plugin do babel para usar o constructor mais resumido, pelo state nas classes
 
-video 9
+proptypes
+
+### `yarn add prop-types`
