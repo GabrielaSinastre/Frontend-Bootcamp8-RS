@@ -1,10 +1,32 @@
 import React, { Component } from "react";
 
+import TechItem from "./TechItem";
+
 class TechList extends Component {
   state = {
     newTech: "",
-    techs: ["Node.js", "ReactJS", "React Native"],
+    techs: [],
   };
+
+  //conceito de ciclo de vida de um componente
+  //executado assim que o componente aparece em tela
+  componentDidMount() {
+    const techs = localStorage.getItem("techs");
+
+    if (techs) {
+      this.setState({ techs: JSON.parse(techs) });
+    }
+  }
+
+  //executado sempre que houver alterações nas props ou estados do componente
+  componentDidUpdate(_, prevState) {
+    if (prevState.techs !== this.state.techs) {
+      localStorage.setItem("techs", JSON.stringify(this.state.techs));
+    }
+  }
+
+  //executado quando o componente deixa de existir
+  componentWillUnmount() {}
 
   //esse formato é arrow function para ter acesso ao this e propriedades da classe
   //e pq recebe um evento como parametro
@@ -31,12 +53,11 @@ class TechList extends Component {
         <form onSubmit={this.handleSubmit}>
           <ul>
             {this.state.techs.map((tech) => (
-              <li key={tech}>
-                {tech}
-                <button onClick={() => this.handleDelete(tech)} type="button">
-                  Remover
-                </button>
-              </li>
+              <TechItem
+                key={tech}
+                tech={tech}
+                onDelete={() => this.handleDelete(tech)}
+              />
             ))}
           </ul>
           <input
